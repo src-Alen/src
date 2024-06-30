@@ -1,0 +1,42 @@
+<!DOCTYPE html>    
+<html lang="en">    
+<head>    
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>输入内容</title>    
+</head>    
+<body>    
+    <form id="nameForm" onsubmit="return false;">  
+        <label for="firstname">请输入一个名字</label>  
+        <input type="text" id="firstname" name="firstname">  
+        <input type="button" value="go" onclick="showName()">  
+        <div id="demo"></div>  
+    </form>  
+    <br>  
+  
+    <input type="text" id="myInput" placeholder="输入内容">  
+    <button onclick="appendInput()">Yes</button>  
+    <div id="output"></div>  
+  
+    <script>    
+        var namePrefix = '';
+  
+        function showName() {  
+            namePrefix = document.getElementById('firstname').value;
+        }  
+  
+        function appendInput() {    
+            var inputValue = document.getElementById('myInput').value;    
+            var outputElement = document.getElementById('output');    
+
+            if (namePrefix) {  
+                inputValue = namePrefix + ': ' + inputValue;  
+                document.getElementById("demo").textContent = "你好，" + namePrefix + "!";
+            }  
+  
+            outputElement.innerHTML += inputValue + '<br>';  
+            document.getElementById('myInput').value = '';    
+        }    
+    </script>    
+</body>    
+</html>

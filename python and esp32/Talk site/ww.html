@@ -1,0 +1,43 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>输入内容</title>  
+</head>  
+<body>  
+    <form id = "name">
+            <label>请输入一个名字</label>
+            <input type="text" name="firstname">
+        <input type="submit" name="submit" value="go">
+        <div id="output"></div>  
+
+
+        <script>  
+        var name1 = document.getElementById('name').value;
+        document.getElementById("demo").textContent = "你好，" + name1 + "!";
+        </script>
+    </form>
+    <br>
+
+    <input type="text" id="myInput" placeholder="输入内容">  
+    <button onclick="appendInput()">Yes</button>  
+    <div id="output"></div>  
+
+    <script>  
+        function appendInput() {  
+            // 获取输入元素的值  
+            var inputValue = document.getElementById('myInput').value;  
+  
+            // 获取要显示内容的元素  
+            var outputElement = document.getElementById('output');  
+  
+            // 将输入的值追加到输出元素的内容中  
+            outputElement.innerHTML += name1 + inputValue + '<br>'; // 使用 '<br>' 标签来实现换行
+  
+            // 清空输入框以便下次输入  
+            document.getElementById('myInput').value = '';  
+        }  
+    </script>  
+</body>  
+</html>

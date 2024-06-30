@@ -1,0 +1,147 @@
+<!-- 永远放在最外面的 DOCTYPE html -->
+<!DOCTYPE html>
+<!-- html作为最底层的根，放在最外面 -->
+<html>
+ 
+</html>
+<!--head里面is网页外标题  -->
+ 
+<head>
+    <title>aaa</title>
+</head>
+<!-- body作为整个html的主要内容 -->
+<!-- 以下都是body内的内容 -->
+ 
+<body>
+    <!-- h1到h6作为网页内标题 -->
+    <h1></h1>
+    <h2>
+        <h3>
+            <h4>
+                <h5>
+                    <h6></h6>
+                </h5>
+            </h4>
+        </h3>
+    </h2>
+ 
+ 
+ 
+ 
+ 
+    <!-- paragraph -->
+    <!-- lorem 这个东西作为随机的文字生成，可在后面加一个数字就可生成这个数的文字 -->
+    <p>Lorem ipsum dolor sit <a href="加入超链接">超链接的文字</a> consectetur adipisicing elit. Ipsa autem reiciendis provident maxime iusto,
+        accusantium obcaecati quibusdam voluptates ut a similique, officiis in.</p>
+ 
+ 
+ 
+ 
+ 
+    <!-- list -->
+    <!-- 列表分为有序<ol>，无序<ul>两种 -->
+    <ol></ol> 这个会在前面加入数字来表示顺序
+    <ul></ul> 这个会在前面加入一个点
+    <li>xxx</li>
+    <li>xxx</li>
+ 
+ 
+ 
+ 
+ 
+    <!-- table 表格 -->
+    <table>
+        <!-- 分为表头和表格内容两部分 -->
+        <!-- 一个tr可以扩充处新的一行 -->
+        <!-- 表头 -->
+        <!-- tr 表示 表格的一行-->
+        <!-- th 表示表头的内容 -->
+        <thead>
+            <tr>
+                <th>xxxxx</th>
+                <th>xxxxxx</th>
+                <th>xxxxx</th>
+                <th>xxxxx</th>
+            </tr>
+        </thead>
+        <!-- table的body，表示表格内的具体内容  -->
+        <!-- td用于表示表格内的内容 -->
+        <tbody>
+            <tr>
+                <td>表格内的内容</td>
+                <td>表格内的内容</td>
+                <td>表格内的内容</td>
+                <td>表格内的内容</td>
+            </tr>
+            <tr>
+                <td>表格内的内容</td>
+                <td>表格内的内容</td>
+                <td>表格内的内容</td>
+                <td>表格内的内容</td>
+            </tr>
+            <tr>
+                <td>表格内的内容</td>
+                <td>表格内的内容</td>
+                <td>表格内的内容</td>
+                <td>表格内的内容</td>
+            </tr>
+        </tbody>
+    </table>
+ 
+ 
+    <!-- br用于在网页中多加一行空白 -->
+    <br>
+    <br>
+    <br>
+    <!-- hr是在网页中加一条线 -->
+    <hr>
+    <hr>
+    <hr>
+ 
+    <!-- forms 表单 -->
+    <!-- 注意！这里的action和method都是全局属性，也就是说，可以在整个文档内使用 -->
+    <form action="form.js" method="post">
+        <!-- 这里用到的div元素，相当于一个容器，无意义，可以加一些属性 -->
+        <div>
+            <!-- label 标签内写入表单前面的提示语，要输入什么就是 -->
+            <label> first name</label>
+            <!-- input 里面是对用户输入的内容的限制，有很多属性可以使用 这些都可以在UP主推荐的MDN，mozilla网站上找到-->
+            <input type="text" name="firstname" placeholder="Enter First name">
+        </div>
+        <!-- 提交键可以用input直接做出来 -->
+        <input type="submit" name="submit" value="Submit">
+    </form>
+ 
+ 
+ 
+ 
+    <!-- 按钮 在里面输入按钮的内容，也可以加一些其他的属性-->
+    <button>okokokoko</button>
+ 
+ 
+ 
+ 
+ 
+    <!-- image插入 依旧有很多属性可以用 -->
+    <img src="图片地址" alt="这个属性是加入的图像的文本描述，如果没有图片则出现这句话">
+ 
+ 
+ 
+ 
+    <!--quotation 块级引用元素，这里面存放引用内容 常用cite元素-->
+    <blockquote cite="加地址"></blockquote>
+ 
+ 
+ 
+ 
+    <!-- abbr元素，可通过 title 属性提供完整的描述 属性内必须且仅可包含完整的描述内容-->
+    <p><abbr title="Massachusetts Institute of Technology">MIT</abbr> is a prestigious college</p>
+ 
+ 
+ 
+</body>
+ 
+<!-- 以上所有的元素属性的解释都可以在mozilla网站上找到 大家可以在上面学到很多东西-->
+<!-- 我做这个 整理很大原因是自己学完了UP主想整理一下，供大家参考-->
+<!-- 我也是个小白，若有错误还请指正 -->
+<!-- 谢谢大家！！ -->
